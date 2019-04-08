@@ -1,0 +1,59 @@
+@charset "ISO-8859-1";
+
+.nav-link {
+	font-size: larger;
+}
+
+.weekDays-selector {
+	margin-top: 2.5%;
+}
+
+.weekDays-selector input {
+	display: none !important;
+	vertical-align: middle;
+}
+
+.weekday{
+	vertical-align: bottom;
+}
+
+.weekDays-selector input[type=checkbox]+label {
+	display: inline-block;
+	border-radius: 6px;
+	background: #dddddd;
+	width: 40px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	font-size: small;
+	vertical-align: middle;
+}
+
+.weekDays-selector input[type=checkbox]:checked+label {
+	background: #2AD705;
+	color: #ffffff;
+}
+
+.table-fit {
+	width: 1px;
+	white-space: nowrap;
+}
+
+html, body {
+	height: 100%;
+}
+
+.title {
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: larger;
+}
+
+.table>tbody>tr>td {
+	height: 100%;
+	vertical-align: middle;
+}
+
+.table>tbody>tr>th {
+	vertical-align: middle;
+}
