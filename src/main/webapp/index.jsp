@@ -1,69 +1,126 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html dir="ltr" lang="pt-BR">
+<html>
 <head>
-<meta charset="ISO-8859-1" />
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	crossorigin="anonymous"></script>
-
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	crossorigin="anonymous"></script>
-
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	crossorigin="anonymous"></script>
-
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/css/bootstrap-select.min.css">
-
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/js/bootstrap-select.min.js"></script>
-
-<script type="text/javascript">
-	$(".selectpicker").selectpicker();
-</script>
+<%@ include file="includes.inc"%>
+<title>STB - Estações</title>
 </head>
+<%@ include file="header.inc"%>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Painel de horários</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+<div class="pb-2 mt-4 mb-4 border-bottom title"><label class="lb-lg">Horários</label><button class="btn btn-primary float-right btn-sm">Criar novo horário</button></div>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a class="nav-link" href="#">Horários</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Estações</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Trajetos</a></li>
-				
-			</ul>
-			
-		</div>
-	</nav>
-	<br/>
-
-	<form class="form-inline">
-		<div class="form-group">
-			<label>Name</label> <input type="text" class="form-control"
-				placeholder="Name">
-		</div>
-		<div class="form-group">
-			<label>Date:</label> <select class='selectpicker'>
-				<option value="something">something</option>
-			</select>
-		</div>
-
-	</form>
+<div class="d-flex justify-content-center">
+	<table class="table table-striped table-bordered table-sm table-hover table-fit">
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Estação</th>
+				<th scope="col">Rota</th>
+				<th scope="col">Hora</th>
+				<th scope="col">Dias da Semana</th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Mark</td>
+				<td>Mark</td>
+				<td>Hora</td>
+				<td>
+					<div class="weekDays-selector">
+						<input type="checkbox" id="weekday-mon0" class="weekday" /> 
+						<label for="weekday-mon0">Seg</label> 
+						
+						<input type="checkbox" id="weekday-tue0" class="weekday" /> 
+						<label for="weekday-tue0">Ter</label> 
+						
+						<input type="checkbox" id="weekday-wed0" class="weekday" /> 
+						<label for="weekday-wed0">Qua</label> 
+						
+						<input type="checkbox" id="weekday-thu0" class="weekday" /> 
+						<label for="weekday-thu0">Qui</label>
+						
+						<input type="checkbox" id="weekday-fri0" class="weekday" /> 
+						<label for="weekday-fri0">Sex</label> 
+						
+						<input type="checkbox" id="weekday-sat0" class="weekday" /> 
+						<label for="weekday-sat0">Sáb</label>
+						
+						<input type="checkbox" id="weekday-sun0" class="weekday" /> 
+						<label for="weekday-sun0">Dom</label>
+					</div>
+				</td>
+				<td><button type="button" class="btn btn-warning btn-sm">Alterar</button></td>
+				<td><button type="button" class="btn btn-danger btn-sm">Apagar</button></td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Jacob</td>
+				<td>Mark</td>
+				<td>Mark</td>
+				<td>
+				<div class="weekDays-selector">
+						<input type="checkbox" id="weekday-mon1" class="weekday" /> 
+						<label for="weekday-mon1">Seg</label> 
+						
+						<input type="checkbox" id="weekday-tue1" class="weekday" /> 
+						<label for="weekday-tue1">Ter</label> 
+						
+						<input type="checkbox" id="weekday-wed1" class="weekday" /> 
+						<label for="weekday-wed1">Qua</label> 
+						
+						<input type="checkbox" id="weekday-thu1" class="weekday" /> 
+						<label for="weekday-thu1">Qui</label>
+						
+						<input type="checkbox" id="weekday-fri1" class="weekday" /> 
+						<label for="weekday-fri1">Sex</label> 
+						
+						<input type="checkbox" id="weekday-sat1" class="weekday" /> 
+						<label for="weekday-sat1">Sáb</label>
+						
+						<input type="checkbox" id="weekday-sun1" class="weekday" /> 
+						<label for="weekday-sun1">Dom</label>
+					</div>
+					</td>
+				<td><button type="button" class="btn btn-warning btn-sm">Alterar</button></td>
+				<td><button type="button" class="btn btn-danger btn-sm">Apagar</button></td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Larry</td>
+				<td>Mark</td>
+				<td>Mark</td>
+				<td><div class="weekDays-selector">
+						<input type="checkbox" id="weekday-mon2" class="weekday" /> 
+						<label for="weekday-mon2">Seg</label> 
+						
+						<input type="checkbox" id="weekday-tue2" class="weekday" /> 
+						<label for="weekday-tue2">Ter</label> 
+						
+						<input type="checkbox" id="weekday-wed2" class="weekday" /> 
+						<label for="weekday-wed2">Qua</label> 
+						
+						<input type="checkbox" id="weekday-thu2" class="weekday" /> 
+						<label for="weekday-thu2">Qui</label>
+						
+						<input type="checkbox" id="weekday-fri2" class="weekday" /> 
+						<label for="weekday-fri2">Sex</label> 
+						
+						<input type="checkbox" id="weekday-sat2" class="weekday" /> 
+						<label for="weekday-sat2">Sáb</label>
+						
+						<input type="checkbox" id="weekday-sun2" class="weekday" /> 
+						<label for="weekday-sun2">Dom</label>
+					</div>
+					</td>
+				<td><button type="button" class="btn btn-warning btn-sm">Alterar</button></td>
+				<td><button type="button" class="btn btn-danger btn-sm">Apagar</button></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
 </body>
 </html>
