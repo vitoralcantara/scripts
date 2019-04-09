@@ -13,8 +13,8 @@
 <div class="d-flex justify-content-center">
 <article class="card-body col-md-3 text-center ">
 	<h4 class="card-title text-center mb-4 mt-1">Acessar o Trem de Bolso Natal</h4>
-	<p class="text-success text-center">Mensagem de sucesso</p>
-	<form>
+<!-- 	<p class="text-success text-center">Mensagem de sucesso</p> -->
+	<form action="timetable.jsp">
 	<div class="form-group">
 	<div class="input-group">
 		<div class="input-group-prepend">

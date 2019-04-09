@@ -4,8 +4,33 @@
 	font-size: larger;
 }
 
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #007bff;
+}
+
+h5{
+	margin-top: 5%;
+}
+
+h2{
+	margin-top: 10%;
+}
+
+h4 {
+	margin-top: 3%;
+}
+
 .weekDays-selector {
 	margin-top: 2.5%;
+}
+
+.button-new{
+	margin-top: -0.5%;
 }
 
 .weekDays-selector input {
@@ -35,7 +60,12 @@
 }
 
 .table-fit {
-	width: 1px;
+	width: 60%;
+	white-space: nowrap;
+}
+
+.table-fit2 {
+	width: 30%;
 	white-space: nowrap;
 }
 

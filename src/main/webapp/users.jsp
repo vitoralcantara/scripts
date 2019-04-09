@@ -5,20 +5,25 @@
 <head>
 <%@ include file="includes.inc"%>
 <title>STB - Usuários e Permissões</title>
+<script>
+$(document).ready(function() {
+	var element = document.getElementById("li_users");
+	element.classList.add("active");
+});	
+</script>
 </head>
 <%@ include file="header.inc"%>
 <body>
 
-<div class="pb-2 mt-4 mb-4 border-bottom title"><label class="lb-lg">Usuários e permissões</label><button class="btn btn-primary float-right btn-sm">Adicionar usuário</button></div>
+<div class="pb-2 mt-4 mb-4 border-bottom title"><label class="lb-lg">Usuários e permissões</label><button class="btn btn-primary float-right btn-sm button-new">Adicionar usuário</button></div>
 
 <div class="d-flex justify-content-center">
-	<table class="table table-striped table-bordered table-sm table-hover table-fit text-center">
-		<thead class="thead-dark">
+	<table class="table table-striped table-bordered table-hover table-sm table-fit2 text-center">
+		<thead>
 			<tr>
 				<th scope="col">#</th>
 				<th scope="col">Usuário</th>
 				<th scope="col">Tipo de permissão</th>
-				<th scope="col"></th>
 				<th scope="col"></th>
 
 			</tr>
@@ -26,24 +31,21 @@
 		<tbody>
 			<tr>
 				<th scope="row">1</th>
-				<td>Mark</td>
-				<td>Total</td>
-				<td><button type="button" class="btn btn-warning btn-sm">Renomear</button></td>
-				<td><button type="button" class="btn btn-danger btn-sm">Remover</button></td>
+				<td>Vitor</td>
+				<td><kbd class="bg-primary">Total</kbd></td>
+				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 			<tr>
 				<th scope="row">2</th>
-				<td>Jacob</td>
-				<td>Total</td>
-				<td><button type="button" class="btn btn-warning btn-sm">Renomear</button></td>
-				<td><button type="button" class="btn btn-danger btn-sm">Remover</button></td>
+				<td>Raphael</td>
+				<td><kbd class="bg-primary">Total</kbd></td>
+				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 			<tr>
 				<th scope="row">3</th>
-				<td>Larry</td>
-				<td>Total</td>
-				<td><button type="button" class="btn btn-warning btn-sm">Renomear</button></td>
-				<td><button type="button" class="btn btn-danger btn-sm">Remover</button></td>
+				<td>Andre</td>
+				<td><kbd class="bg-primary">Total</kbd></td>
+				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 		</tbody>
 	</table>
