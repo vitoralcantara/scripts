@@ -26,7 +26,7 @@
 		<tbody>
 			<tr>
 				<th scope="row">1</th>
-				<td>Mark</td>
+				<td>Marcão</td>
 				<td>Mark</td>
 				<td>Hora</td>
 				<td>
@@ -121,6 +121,7 @@
 			</tr>
 		</tbody>
 	</table>
-	</div>
+	</div>	
 </body>
+<%@ include file="footer.inc"%>
 </html>

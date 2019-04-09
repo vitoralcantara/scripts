@@ -50,4 +50,5 @@
 	
 	</div>
 </body>
+<%@ include file="footer.inc"%>
 </html>

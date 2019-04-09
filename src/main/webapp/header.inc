@@ -7,7 +7,10 @@
 				<li class="nav-item"><a class="nav-link" href="index.jsp">Horários</a></li>
 				<li class="nav-item"><a class="nav-link" href="stations.jsp">Estações</a></li>
 				<li class="nav-item"><a class="nav-link" href="paths.jsp">Rotas</a></li>
+				<li class="nav-item"><a class="nav-link" href="holidays.jsp">Feriados</a></li>
+				<li class="nav-item"><a class="nav-link" href="users.jsp">Usuários</a></li>
 			</ul>
+			<button class="btn btn-info float-right btn-sm">Sair</button>
 		</div>
 	</nav>
 </header>
