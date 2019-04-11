@@ -33,19 +33,19 @@ $(document).ready(function() {
 				<th scope="row">1</th>
 				<td>Natal</td>
 				<td>Ceará-Mirim</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
+				<td><button type="button" onclick="location.href='alter-path.jsp';" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 			<tr>
 				<th scope="row">2</th>
 				<td>Ceará-Mirim</td>
 				<td>Natal</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
+				<td><button type="button" onclick="location.href='alter-path.jsp';" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 			<tr>
 				<th scope="row">3</th>
 				<td>Natal</td>
 				<td>Parnamirim</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
+				<td><button type="button" onclick="location.href='alter-path.jsp';" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 		</tbody>
 	</table>

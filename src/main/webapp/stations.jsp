@@ -29,17 +29,17 @@ $(document).ready(function() {
 			<tr>
 				<th scope="row">1</th>
 				<td>Natal</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Renomear</button></td>
+				<td><button type="button" onclick="location.href='alter-station.jsp';"  class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 			<tr>
 				<th scope="row">2</th>
 				<td>Alecrim I</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Renomear</button></td>
+				<td><button type="button" onclick="location.href='alter-station.jsp';" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 			<tr>
 				<th scope="row">3</th>
 				<td>Quintas</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Renomear</button></td>
+				<td><button type="button" onclick="location.href='alter-station.jsp';" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 		</tbody>
 	</table>

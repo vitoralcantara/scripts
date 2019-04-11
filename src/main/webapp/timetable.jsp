@@ -60,7 +60,7 @@ $(document).ready(function() {
 						<label for="weekday-sun0">Dom</label>
 					</div>
 				</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
+				<td><button type="button" onclick="location.href='alter-time.jsp';" class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 			<tr>
 				<th scope="row">2</th>
@@ -91,7 +91,7 @@ $(document).ready(function() {
 						<label for="weekday-sun1">Dom</label>
 					</div>
 					</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
+				<td><button type="button" onclick="location.href='alter-time.jsp';"  class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 			<tr>
 				<th scope="row">3</th>
@@ -121,7 +121,7 @@ $(document).ready(function() {
 						<label for="weekday-sun2">Dom</label>
 					</div>
 					</td>
-				<td><button type="button" class="btn btn-outline-warning btn-sm">Alterar</button></td>
+				<td><button type="button" onclick="location.href='alter-time.jsp';"  class="btn btn-outline-warning btn-sm">Alterar</button></td>
 			</tr>
 		</tbody>
 	</table>
