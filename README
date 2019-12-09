@@ -1,2 +1,8 @@
-Comando para executr:
-mvn package & java -jar target/dependency/webapp-runner.jar --port 80 target/*.war
+Comando para compilar e executar servidor em segundo plano:
+mvn package & start java -jar target/dependency/webapp-runner.jar --port 80 target/*.war
+
+Comando só para compilar:
+mvn package
+
+Comando só para executar servidor em segundo plano:
+start java -jar target/dependency/webapp-runner.jar --port 80 target/*.war

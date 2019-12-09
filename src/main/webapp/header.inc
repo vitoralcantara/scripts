@@ -17,6 +17,8 @@
 					href="holidays.jsp">Feriados</a></li>
 				<li id="li_users" class="nav-item"><a class="nav-link"
 					href="users.jsp">Usuários</a></li>
+					<li id="li_notifications" class="nav-item"><a class="nav-link"
+					href="notifications.jsp">Notificações</a></li>
 					
 		</ul>
 		
